@@ -1,0 +1,60 @@
+Device Security Report
+======================
+
+Report details
+  Date generated:                                  2026-03-28 07:25:49
+  fwupd version:                                   2.0.8
+
+System details
+  Hardware model:                                  SAMSUNG ELECTRONICS CO., LTD. 750XGK
+  Processor:                                       13th Gen Intel(R) Core(TM) i5-1335U
+  OS:                                              Debian GNU/Linux 13 (trixie)
+  Security level:                                  HSI:3! (v2.0.8)
+
+HSI-1 Tests
+  Chave de plataforma UEFI:                        Pass (Válido)
+  Região da BIOS do firmware:                      Pass (Bloqueado)
+  Variáveis de bootservice UEFI:                   Pass (Bloqueado)
+  Manifesto de chave MEI:                          Pass (Válido)
+  Versão do Mecanismo de Gerenciamento Intel:      Pass (Válido)
+  Bloqueio de proteção contra gravação de firmware:Pass (Habilitado)
+  Depuração de plataforma:                         Pass (Desabilitado)
+  Atualizações de firmware da BIOS:                Pass (Habilitado)
+  Modo de fabricação do Mecanismo de Gerenciamento Intel:Pass (Bloqueado)
+  Secure boot de UEFI:                           ! Fail (Desabilitado)
+  Proteção contra gravação de firmware:            Pass (Desabilitado)
+  Configuração de plataforma TPM:                  Pass (Válido)
+  Substituição de Mecanismo de Gerenciamento Intel:Pass (Bloqueado)
+  TPM v2.0:                                        Pass (Encontrado)
+
+HSI-2 Tests
+  Fuse de Intel BootGuard:                         Pass (Válido)
+  Inicialização verificada por Intel BootGuard:    Pass (Válido)
+  ACM protegido com Intel BootGuard:               Pass (Válido)
+  Intel BootGuard:                                 Pass (Habilitado)
+  Reconstrução de TPM:                             Pass (Válido)
+  Proteção de IOMMU:                               Pass (Habilitado)
+  Depuração de plataforma:                         Pass (Bloqueado)
+
+HSI-3 Tests
+  Política de erros da Intel BootGuard:            Pass (Válido)
+  Proteção de DMA pré-inicialização:               Pass (Habilitado)
+  Suspender para RAM:                              Pass (Desabilitado)
+  Control-flow Enforcement Technology:             Pass (Suportado)
+  Suspender para ocioso:                           Pass (Habilitado)
+
+HSI-4 Tests
+  RAM criptografada:                             ! Fail (Sem suporte)
+  Prevenção de acesso ao modo supervisor:          Pass (Habilitado)
+
+Runtime Tests
+  Control-flow Enforcement Technology:           ! Fail (Sem suporte)
+  Swap do Linux:                                 ! Fail (Não encriptado)
+  Verificação do atualizador de firmware:          Pass (Não comprometido)
+  db de UEFI:                                      Pass (Válido)
+  Lockdown do kernel Linux:                      ! Fail (Desabilitado)
+  Verificação do kernel Linux:                     Pass (Não comprometido)
+
+Host security events
+
+For information on the contents of this report, see https://fwupd.github.io/hsi.html
